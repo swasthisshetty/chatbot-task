@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <div id="chatbox">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">Chatbox</div>
+                  <div class="card-body" class="chat" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+                    <dl id="responseList" *ngFor="let previous of history" class="row-striped">
+                        <span *ngFor="let res of previous">
+                          <strong>{{ res.owner }}: </strong>
+                          <span *ngIf="res.response_type==='text'">{{ res.text }}</span>
+                        </span>
+                    </dl>
+                    <hr/>
+                    <div class='input-group'>
+                      <input type='text' name='message' #query1 class="form-control"
+                             placeholder="Type text here..."
+                             (keyup.enter)="onSubmit(query1.value);query1.value = ''">
+                      <div class='input-group-append'>
+                        <button class='btn btn-primary' (click)="onSubmit(query1.value);query1.value = ''">Send
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,36 @@
+{
+  "groups": [
+    {
+      "name": "ibm.watson.assistant",
+      "type": "watsonassistant.WatsonAssistantConfig",
+      "sourceType": "watsonassistant.WatsonAssistantConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "ibm.watson.assistant.apikey",
+      "type": "java.lang.String",
+      "sourceType": "watsonassistant.WatsonAssistantConfig",
+      "defaultValue": "TO9VdomJoalU-hzSzXPCWzH6r4pzk1c51MkYLKAk1ZpU"
+    },
+    {
+      "name": "ibm.watson.assistant.id",
+      "type": "java.lang.String",
+      "sourceType": "watsonassistant.WatsonAssistantConfig",
+      "defaultValue": "ecd8c997-231b-4b14-b829-262b5fc5c051"
+    },
+    {
+      "name": "ibm.watson.assistant.url",
+      "type": "java.lang.String",
+      "sourceType": "watsonassistant.WatsonAssistantConfig",
+      "defaultValue": "https:\/\/api.us-south.assistant.watson.cloud.ibm.com\/instances\/6501edc4-6c37-4368-9319-106737b88ddf"
+    },
+    {
+      "name": "ibm.watson.assistant.version-date",
+      "type": "java.lang.String",
+      "sourceType": "watsonassistant.WatsonAssistantConfig",
+      "defaultValue": "2020-01-16"
+    }
+  ],
+  "hints": []
+}
