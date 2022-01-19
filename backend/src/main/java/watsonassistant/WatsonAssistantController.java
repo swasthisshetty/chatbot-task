@@ -1,5 +1,5 @@
 package watsonassistant;
-
+import java.util.*;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +26,10 @@ public class WatsonAssistantController {
         return response.getGeneric();
 
     }
-
+    @RequestMapping(value="/getAccount", method = RequestMethod.GET)
+public Account getAccountDetails(@PathVariable int cusid) {
+    	return AccountService.getAccountDetails(cusid);
+    }
 }
 
 
